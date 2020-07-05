@@ -15,7 +15,7 @@ def home():
         size = request.form["size"]
         clusters = request.form["clusters"]
         print(size)
-        URL = "http://localhost:9000/home"
+        URL = "http://flask-clustering:9000/home"
         PARAMS = {'size':size,'clusters':clusters} 
         r = requests.get(url = URL, params = PARAMS) 
         return render_template(
